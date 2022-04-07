@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    list-style: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.header {
+    width: 100%;
+    height: 54px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header a {
+    color: black;
+}
+.logo {
+    width: 137px;height: 54px;
+    background-position: center;
+    background-size: cover;
+    padding-left: 10px;
+    margin-top: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    right: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(242, 242, 242);
+}
+.listbox {
+    display: none;
+    width: 200px;height: 345px;
+    background-color: rgb(242, 242, 242);
+    padding-bottom: 10px;
+    padding: 12px 0 12px 24px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.map {
+    background-color: rgb(230, 230, 230);
+    display: none;
+    width: 100%;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.vm02:hover {
+    border: 0.5px;
+    border-style: dotted;
+    background-color: rgb(242, 242, 242);
+}
+.vm02:hover .listbox {
+    display: block;
+}
+.vm02:hover .map {
+    display: flex;
+}
+.vm03left {
+    height: 50px;
+    position: absolute;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+.vm03left1 {
+    height: 50px;
+    position: absolute;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+.le30 {
+    margin-left: 30px;
+}
+.burger {
+    display: none;
+    width: 35px;height: 35px;
+    background-color: #ffd800;
+    position: relative;
+    z-index: 1;
+    float: left;
+}
+.burgerlist {
+    display: none;
+    width: 100vw;height: 0;
+    position: absolute;
+    left: -2vw;
+    top: 25px;
+    background-color: aquamarine;
+}
+.cls {
+    height: 49px;
+    padding: 14px 24px 15px 15px;
+    background-color: rgb(242, 242, 242);
+}
+.burger:focus .burgerlist {
+    display: block;
+    background-color: azure;
+}
+.vm03right {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vm03 {
+    padding: 16px 8px;
+    font-size: 13px;
+    text-decoration: none;
+}
+.vm03:hover {
+    /* margin-bottom: 2px; */
+    text-decoration: underline 1px;
+}
+.vm03right .vm03:nth-last-child(2):hover {
+    text-decoration: unset;
+}
+.test {
+    font-size: 1.5rem;
+    color: gray;
+}
+.section1 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.cbox {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.imgw {
+    width: 90%;
+}
+.new1 {
+    width: 75px;height: 30px;
+    padding-top: 3px;
+    background-color: rgb(255, 185, 0);
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+.new2 {
+    color: white;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+    font-size: 34px;
+}
+.MicrosoftOneDrive {
+    font-size: 34px;
+    color: black;
+    font-weight: 600;
+    margin: 0;
+}
+.onedrive {
+    color: black;
+    font-size: 15px;
+}
+.yes {
+    padding-left: 25px;
+    background-color: white;
+    margin-top: 20px;
+    font-weight: 600;
+    width: 250px;height: 40px;
+    padding-top: 10px;
+}
+.sss {
+    color: white;
+    padding-left: 25px;
+    background-color: black;
+    margin-top: 18px;
+    font-weight: 600;
+    width: 120px;height: 40px;
+    padding-top: 10px
+}
+.cbox {
+    max-width: 500px;
+    text-align: left;
+}
+.section2 {
+    width: 80%;height: 180px;
+    margin: 0 auto;
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nlnlouo {
+    width: 130px;height: 84px;
+    margin: 12px 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.font {
+    max-width: 125px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+}
+.section3 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+    padding-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.rb {
+    width: calc((100% - 30px * 3) / 4);
+    margin-bottom: 50px;
+}
+.rb>.img {
+    width: 100%;
+}
+.title {
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.link {
+    margin: 0px 10px 0px 2px;
+    font-weight: 600;
+    color: rgb(0, 103, 184);
+    text-decoration: none;
+}
+.new {
+    margin-top: 20px;
+    padding: 3px 14px 5px;
+    width: 125px;height: 26px;
+    background-color: #ffd800;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.section4 {
+    width: 100%;
+    margin: 0 auto 48px;
+    text-align: center;
+    position: relative;
+}
+.sub {
+    width: 100%;height: 80px;
+    padding-left: 5%;
+    padding-top: 48px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.sub a {
+    margin-right: 20px;
+}
+.footer {
+    width: 100%;height: 324px;
+    padding: 0 5%;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-between;
+}
+.footer1 {
+    margin-left: 0;
+    width: 216px;
+    padding-top: 20px;
+    color: rgb(97, 97, 97);
+    float: left;
+}
+h4 {
+    margin-bottom: -10px;
+}
+ul {
+    padding: 0;
+}
+li {
+    padding: 4px 0;
+}
+li:hover {
+    text-decoration: underline 1px;
+}
+a {
+    list-style: 16px;
+    font-size: 11px;
+    color: rgb(97, 97, 97);
+    text-decoration: none;
+}
+.bot {
+    width: 100%;height: 72px;
+    padding: 30px 5% 16px 5%;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.botli {
+    float: left;
+    right: 0;
+    margin-left: 20px;
+}
+.botli:hover {
+    text-decoration: underline 1px;
+}
+.botli:last-child:hover {
+    text-decoration: unset;
+}
+@media screen and (max-width:1399px) {
+    .new2 {
+        font-size: 24px;
+    }
+    .bye {
+        display: none;
+    }
+    .MicrosoftOneDrive {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:1082px) {
+    .header {
+        padding: 0 2%;
+    }
+    .vm03left {
+        margin-left: 150px;
+    }
+    .imgw {
+        width: 100%;
+    }
+    .section3 {
+        flex-wrap: wrap;
+    }
+    .rb {
+        width: calc((100% - 30px) / 2);
+    }
+    .footer {
+        height: unset;
+        flex-wrap: wrap;
+    }
+    .footer1 {
+        width: 33%;
+    }
+}
+@media screen and (max-width:859px) {
+    .logo {
+        margin: 0 calc(50% - 68.5px);
+    }
+    .burger {
+        display: block;
+    }
+    .vm02:hover {
+        display: none;
+    }
+    .vm03left {
+        display: none;
+    }
+    .vm03right {
+        justify-content: end;
+        width: 100%;
+        margin: 0 0 0 -100vw;
+    }
+    .bye2 {
+        display: none;
+    }
+    .push {
+        position: absolute;
+        left: 30px;
+    }
+}
+@media screen and (max-width:767px) {
+    .cbox {
+        max-width: unset;
+        width: 100vw;height: 320px;
+        background-color: #333;
+        margin: 0 auto;
+        padding: 0 55px;
+        position: unset;
+        transform: unset;
+        margin-top: -5px;
+        left: 0;
+        top: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wbox {
+        background-color: #e6e6e6;
+    }
+    .section2 {
+        width: 95%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 25px 0;
+    }
+    .nlnlouo {
+        width: 300px;
+        justify-content: start;
+        align-items: center;
+    }
+    .nlnlouo img {
+        width: 20px; height: 20px;
+    }
+    .font {
+        margin-left: 10px;
+        max-width: unset;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .font:hover {
+        text-decoration: underline 1px;
+    }
+    .bot {
+        height: 144px;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .botli {
+        margin-top: 50px;
+    }
+    .botli:first-child {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:539px) {
+    .rb {
+        width: 100%;
+    }
+    .footer1 {
+        width: 100%;
+    }
+}
